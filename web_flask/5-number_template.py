@@ -34,9 +34,9 @@ def number(n):
     if int == type(n):
         return "%i is a number" % n
 
-@app.route("/number_template/<int:n>", strict_slashes=False)
+@app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
-    if int == type(n):
+    if type(n) == int:
         return render_template('5-number.html', n=n)
 
 if __name__ == '__main__':
