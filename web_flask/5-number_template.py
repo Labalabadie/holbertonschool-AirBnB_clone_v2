@@ -34,6 +34,7 @@ def number(n):
     if int == type(n):
         return "%i is a number" % n
 
+
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
     if type(n) == int:
